@@ -52,3 +52,48 @@ export default tseslint.config({
   },
 })
 ```
+
+# PWA with Supabase
+
+This is a Progressive Web App (PWA) built with React, Vite, and Supabase.
+
+## Local Development
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Steps to Run Locally
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/intellegin/app.git
+   cd pwa-app
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set Up Supabase Credentials**
+   - Create a `.env` file in the `pwa-app` directory.
+   - Add the following environment variables:
+     ```env
+     VITE_SUPABASE_URL=your-supabase-url
+     VITE_SUPABASE_ANON_KEY=your-anon-key
+     ```
+   - Replace `your-supabase-url` and `your-anon-key` with your actual Supabase project credentials.
+
+4. **Start the Development Server**
+   ```bash
+   npm run dev
+   ```
+   - Your app will be available at [http://localhost:5173/](http://localhost:5173/).
+
+## Deployment
+- The app is configured for deployment on Supabase.
+- Ensure your Supabase project is set up correctly before deploying.
+
+## License
+MIT
